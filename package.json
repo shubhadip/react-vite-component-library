@@ -24,7 +24,7 @@
     "runlint": "npm run check-types && npm run lint",
     "check-types": "tsc --noemit",
     "cz": "git-cz",
-    "prepare": "node_modules/.bin/husky-run install",
+    "prepare": "husky install",
     "precommit": "lint-staged",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
