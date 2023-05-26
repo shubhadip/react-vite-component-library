@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/shubhadip/react-vite-component-library"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/shubhadip/react-vite-component-library/issues"
   },
@@ -115,9 +118,6 @@
     "vite-plugin-dts": "^2.3.0",
     "vite-plugin-istanbul": "^4.0.1",
     "vite-tsconfig-paths": "^4.2.0"
-  },
-  "publishConfig": {
-    "access": "restricted"
   },
   "lint-staged": {
     "*.(ts|tsx)": [
