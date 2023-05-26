@@ -8,7 +8,7 @@
     "url": "https://github.com/shubhadip/react-vite-component-library"
   },
   "publishConfig": {
-    "access": "public",
+    "access": "restricted",
     "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
