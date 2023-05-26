@@ -3,6 +3,13 @@
   "contributors": [
     "Shubhadip Maity <shubhadip@inspiritvr.com>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhadip/react-vite-component-library"
+  },
+  "bugs": {
+    "url": "https://github.com/shubhadip/react-vite-component-library/issues"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {
