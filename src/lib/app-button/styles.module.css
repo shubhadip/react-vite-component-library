@@ -1,0 +1,24 @@
+.btnClass {
+  @apply flex justify-between items-center py-4 px-8 cursor-pointer transition ease-out duration-300 relative;
+  .lefticonClass {
+    @apply absolute;
+  }
+  .title {
+    @apply w-full text-center leading-6;
+  }
+  .righticonClass {
+    @apply absolute;
+  }
+  &.critical {
+    @apply bg-critical-1;
+  }
+  &.primary {
+    @apply bg-primary-5;
+  }
+  &.link {
+    @apply bg-transparent border-transparent;
+  }
+  &.disable {
+    @apply pointer-events-none bg-neutral-20 border-neutral-20;
+  }
+}

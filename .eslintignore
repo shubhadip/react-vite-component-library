@@ -1,0 +1,10 @@
+build/
+node_modules/
+*.d.ts
+tests/
+*.config.js
+*.json
+./src/shared/validations.ts
+*.cy.tsx
+*.js
+.next/

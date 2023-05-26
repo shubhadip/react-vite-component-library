@@ -1,0 +1,5 @@
+.vscode
+public
+*.js
+*.json
+node_modules

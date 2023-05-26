@@ -1,0 +1,123 @@
+{
+  "name": "react-vite-component-library",
+  "contributors": [
+    "Shubhadip Maity <shubhadip@inspiritvr.com>"
+  ],
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && npm run build:css",
+    "lint": "npm run check-types && eslint --fix",
+    "preview": "vite preview",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "runlint": "npm run check-types && npm run lint",
+    "check-types": "tsc --noemit",
+    "cz": "git-cz",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "semantic-release": "semantic-release",
+    "publish:build": "npm ci && npm run build",
+    "test-storybook": "test-storybook --coverage",
+    "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
+    "storybook:css": "tailwindcss -w -i ./src/assets/css/tailwind-entry.css -o ./src/assets/css/watch-tailwind.css",
+    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
+    "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
+    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "module": "./dist/react-component-library.es.js",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@storybook/addon-a11y": "^7.0.17",
+    "@storybook/addon-actions": "^7.0.17",
+    "@storybook/addon-coverage": "^0.0.8",
+    "@storybook/addon-essentials": "^7.0.17",
+    "@storybook/addon-interactions": "^7.0.17",
+    "@storybook/addon-links": "^7.0.17",
+    "@storybook/addon-styling": "^1.0.8",
+    "@storybook/blocks": "^7.0.17",
+    "@storybook/builder-vite": "^7.0.17",
+    "@storybook/jest": "^0.1.0",
+    "@storybook/react": "^7.0.17",
+    "@storybook/react-vite": "^7.0.17",
+    "@storybook/test-runner": "^0.11.0-next.0",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/node": "^20.2.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "axe-playwright": "^1.2.3",
+    "babel-plugin-istanbul": "^6.1.1",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "concurrently": "^8.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "eslint-plugin-storybook": "^0.6.12",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.0",
+    "json": "^11.0.0",
+    "lint-staged": "^13.2.2",
+    "nyc": "^15.1.0",
+    "playwright": "^1.31.2",
+    "postcss": "^8.4.21",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "prettier": "^2.8.7",
+    "prop-types": "^15.8.1",
+    "semantic-release": "^20.1.1",
+    "semantic-release-cli": "^5.4.4",
+    "storybook": "^7.0.17",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-istanbul": "^4.0.1",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "npm run lint"
+    ],
+    "*.{tsx,js}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  }
+}
