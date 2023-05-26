@@ -1,6 +1,7 @@
 {
   "branches": [
     "main",
-    "next"
+    "next",
+    "master"
   ]
 }
