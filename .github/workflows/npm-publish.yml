@@ -1,8 +1,9 @@
 name: main
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: null
+  # push:
+  #   branches:
+  #     - main
 jobs:
   build:
     runs-on: ubuntu-latest
