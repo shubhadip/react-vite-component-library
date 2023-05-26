@@ -21,7 +21,6 @@
     "build": "tsc && vite build && npm run build:css",
     "lint": "npm run check-types && eslint --fix",
     "preview": "vite preview",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
     "runlint": "npm run check-types && npm run lint",
     "check-types": "tsc --noemit",
     "cz": "git-cz",
