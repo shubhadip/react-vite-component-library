@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/shubhadip/react-vite-component-library/issues"
   },
-  "version": "1.0.18",
+  "version": "1.0.19",
   "type": "module",
   "files": [
     "dist/*",
@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build":"npm run build-proj && npm run build-modules",
+    "build": "npm run build-proj && npm run build-modules",
     "build-proj": "tsc && vite build && cp -r ./src/lib ./dist",
     "build-modules": "tsc && vite build --config vite-mods.config.js",
     "lint": "npm run check-types && eslint --fix",
