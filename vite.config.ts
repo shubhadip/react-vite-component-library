@@ -2,14 +2,16 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path';
 import IstanbulPlugin from 'vite-plugin-istanbul';
-import dts from 'vite-plugin-dts'
+// import dts from 'vite-plugin-dts'
 
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
 		react(),
-		dts(),
+		// dts({
+		// 	outputDir: 'dist/types'
+		// }),
 		IstanbulPlugin({
 			include: 'src/*',
 			exclude: ['node_modules', 'test/'],
