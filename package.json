@@ -12,6 +12,11 @@
   },
   "version": "1.0.13",
   "type": "module",
+  "files": [
+    "dist/*",
+    "src/*",
+    "types/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
