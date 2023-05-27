@@ -14,7 +14,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npm run build:css",
+    "build": "tsc && vite build",
     "lint": "npm run check-types && eslint --fix",
     "preview": "vite preview",
     "runlint": "npm run check-types && npm run lint",
