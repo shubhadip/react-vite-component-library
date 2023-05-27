@@ -6,12 +6,12 @@ const config: StorybookConfig = {
 		check: false,
 	},
 	addons: [
+		'@storybook/addon-coverage',
 		'@storybook/addon-links',
 		'@storybook/addon-essentials',
 		'@storybook/addon-a11y',
 		'@storybook/addon-interactions',
 		'@storybook/addon-styling',
-		'@storybook/addon-coverage',
 	],
 	framework: {
 		name: '@storybook/react-vite',
