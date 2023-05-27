@@ -1,22 +1,5 @@
-import { ButtonThemes } from './../../shared/enums';
+import { IButtonProps } from '../../types/interface';
 import styles from './styles.module.css';
-
-interface IProps {
-	title?: string;
-	onClick?: (value?: string) => void;
-	showLeftIcon?: boolean;
-	showRightIcon?: boolean;
-	leftIcon?: any;
-	rightIcon?: any;
-	customTitleClass?: string;
-	customBtnClass?: string;
-	customLeftIconClass?: string;
-	customRightIconClass?: string;
-	theme: ButtonThemes;
-	isLoading?: boolean;
-	customWidth?: number | string;
-	customHeight?: number | string;
-}
 
 const ThemeMap = {
 	primary: styles.primary,
@@ -25,7 +8,7 @@ const ThemeMap = {
 	disable: styles.disable,
 };
 
-export const AppButton = (props: IProps): JSX.Element => {
+export const AppButton = (props: IButtonProps): JSX.Element => {
 	const handleClick = (): void => {
 		if (props.onClick) {
 			props.onClick();
@@ -34,9 +17,15 @@ export const AppButton = (props: IProps): JSX.Element => {
 
 	const StyleClass = ThemeMap[props.theme] || ThemeMap.primary;
 
-	const RenderTitle = ({ title }: { title?: string }): JSX.Element | null => {
+	const RenderTitle = ({
+		title,
+		customTitleClass,
+	}: {
+		title?: string;
+		customTitleClass?: string;
+	}): JSX.Element | null => {
 		return props.title ? (
-			<p className={[styles.title, props.customTitleClass].join(' ')}>{title}</p>
+			<p className={[styles.title, customTitleClass].join(' ')}>{title}</p>
 		) : null;
 	};
 
@@ -58,7 +47,7 @@ export const AppButton = (props: IProps): JSX.Element => {
 			{props.isLoading ? (
 				<span className="text-base w-full text-center text-white">{`Loading ...`}</span>
 			) : (
-				<RenderTitle title={props.title} />
+				<RenderTitle title={props.title} customTitleClass={props.customTitleClass} />
 			)}
 			{props.showRightIcon ? (
 				<span className={[styles.righticonClass, props.customRightIconClass].join(' ')}>

@@ -2,12 +2,14 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path';
 import IstanbulPlugin from 'vite-plugin-istanbul';
+import dts from 'vite-plugin-dts'
 
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
 		react(),
+		dts(),
 		IstanbulPlugin({
 			include: 'src/*',
 			exclude: ['node_modules', 'test/'],
@@ -21,7 +23,7 @@ export default defineConfig({
 			entry: path.resolve(__dirname, 'src/lib/index.ts'),
 			name: 'react-component-library',
 			formats: ['es'],
-			fileName: (format) => `react-component-library.${format}.js`,
+			fileName: (format) => `index.${format}.js`,
 		},
 		rollupOptions: {
 			external: ['react', 'react-dom'],
