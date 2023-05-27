@@ -5,7 +5,7 @@ export = ReactViteComponentLibrary;
 export as namespace ReactViteComponentLibrary;
 
 declare namespace ReactViteComponentLibrary {
-	export declare const AppButton: (props: IButtonProps) => JSX.Element;
+	export const AppButton: (props: IButtonProps) => JSX.Element;
 	export {
 		ButtonThemes,
 		AppDialogVariant,
