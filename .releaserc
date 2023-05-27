@@ -1,11 +1,9 @@
 {
-  "release": {
-    "branches": [
-      "main",
-      "next",
-      "master"
-    ]
-  },
+  "branches": [
+    "main",
+    "next",
+    "master"
+  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
