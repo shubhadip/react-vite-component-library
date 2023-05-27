@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.17...v1.0.18) (2023-05-27)
+
+
+### Bug Fixes
+
+* nammespace added ([26c86ed](https://github.com/shubhadip/react-vite-component-library/commit/26c86edda5f8eeb039239ccaad075f7fa7e1de8c))
+
 ## [1.0.17](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.16...v1.0.17) (2023-05-27)
 
 
