@@ -1,5 +1,5 @@
-import { ButtonThemes, AppDialogVariant } from './enums';
-import { IUnityBody, IButtonProps } from './interface';
+import { ButtonThemes, AppDialogVariant } from './types/enums';
+import { IUnityBody, IButtonProps } from './types/interface';
 
 export = ReactViteComponentLibrary;
 export as namespace ReactViteComponentLibrary;

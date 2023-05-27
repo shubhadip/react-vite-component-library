@@ -1,6 +1,6 @@
 import './App.css';
 import { AppButton } from './lib';
-import { ButtonThemes } from './types/enums';
+import { ButtonThemes } from './lib/types/enums';
 
 /**
  *

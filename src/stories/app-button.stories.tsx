@@ -1,6 +1,6 @@
 import { expect } from '@storybook/jest';
 import { AppButton } from '../lib';
-import { ButtonThemes } from '../types/enums';
+import { ButtonThemes } from '../lib/types/enums';
 import { userEvent, waitFor, within } from '@storybook/testing-library';
 
 const defaultProps = {

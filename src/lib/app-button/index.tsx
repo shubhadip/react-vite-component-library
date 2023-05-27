@@ -1,4 +1,4 @@
-import { IButtonProps } from '../../types/interface';
+import { IButtonProps } from '../types/interface';
 import styles from './styles.module.css';
 
 const ThemeMap = {
