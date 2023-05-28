@@ -1,6 +1,6 @@
 import './App.css';
-import { AppButton } from './lib';
-import { ButtonThemes } from './lib/types/enums';
+// import { AppButton } from './lib';
+// import { ButtonThemes } from './lib/types/enums';
 
 /**
  *
@@ -9,7 +9,7 @@ import { ButtonThemes } from './lib/types/enums';
 function App(): JSX.Element {
 	return (
 		<>
-			<AppButton
+			{/* <AppButton
 				title="Click Me"
 				customBtnClass={'rounded-lg active:bg-violet-600'}
 				customTitleClass={'text-black font-bold'}
@@ -40,7 +40,7 @@ function App(): JSX.Element {
 				theme={ButtonThemes.disable}
 				customHeight={'75px'}
 				customWidth={'250px'}
-			/>
+			/> */}
 		</>
 	);
 }

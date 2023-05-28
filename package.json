@@ -19,9 +19,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build":"npm run build-proj && npm run build-modules",
-    "build-proj": "tsc && vite build && cp -r ./src/lib ./dist",
-    "build-modules": "tsc && vite build --config vite-mods.config.js",
+    "build": "tsc && vite build && cp -r ./src/lib ./dist",
     "lint": "npm run check-types && eslint --fix",
     "preview": "vite preview",
     "runlint": "npm run check-types && npm run lint",

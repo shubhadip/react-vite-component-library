@@ -1,3 +1,5 @@
 import { AppButton } from './app-button';
 
-export { AppButton };
+import { ButtonThemes, AppDialogVariant } from './types/enums';
+
+export { AppButton, ButtonThemes, AppDialogVariant };
