@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.25...v1.0.26) (2023-05-29)
+
+
+### Bug Fixes
+
+* chromatic added ([0240523](https://github.com/shubhadip/react-vite-component-library/commit/0240523a00279435bdcb4800d3d421932d6ad4a6))
+
 ## [1.0.25](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.24...v1.0.25) (2023-05-29)
 
 
