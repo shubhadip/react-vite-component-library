@@ -85,6 +85,7 @@
     "axe-playwright": "^1.2.3",
     "babel-plugin-istanbul": "^6.1.1",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "chromatic": "^6.17.4",
     "concurrently": "^8.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",

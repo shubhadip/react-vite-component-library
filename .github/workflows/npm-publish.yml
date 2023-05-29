@@ -29,14 +29,6 @@ jobs:
         env:
           CI: true
 
-      - run: npm run build-storybook
-        name: build-storybook
-      - name: Deploy to Gh Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          folder: storybook-static
-
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
