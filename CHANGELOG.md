@@ -1,3 +1,11 @@
+## [1.0.25](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.24...v1.0.25) (2023-05-29)
+
+
+### Bug Fixes
+
+* trying gh pages ([09d60a9](https://github.com/shubhadip/react-vite-component-library/commit/09d60a96366f6e0d33d31e29d7f719f44d6aa0d8))
+* trying gh pages ([6f4b805](https://github.com/shubhadip/react-vite-component-library/commit/6f4b805887b20579f6221a9661608852a64c715f))
+
 ## [1.0.24](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.23...v1.0.24) (2023-05-29)
 
 
