@@ -33,7 +33,7 @@
     "test-storybook": "test-storybook --coverage",
     "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/assets/css/tailwind-entry.css -o ./src/assets/css/watch-tailwind.css",
-    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
+    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\" -o docs-build",
     "build-storybook:css": "tailwindcss -m -i ./src/assets/css/tailwind-entry.css -o ./src/index.css",
     "build:css": "tailwindcss -m -i ./src/assets/css/tailwind-entry.css -o ./dist/styles.css"
   },
