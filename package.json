@@ -1,11 +1,14 @@
 {
   "name": "react-vite-component-library",
   "contributors": [
-    "Shubhadip Maity <shubhadip.maity@gmail.com>"
+    {
+      "name": "Shubhadip Maity",
+      "email": "shubhadip.maity@gmail.com"
+    }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shubhadip/react-vite-component-library"
+    "url": "git+https://github.com/shubhadip/react-vite-component-library.git"
   },
   "bugs": {
     "url": "https://github.com/shubhadip/react-vite-component-library/issues"
@@ -132,5 +135,8 @@
     "commitizen": {
       "path": "./node_modules/git-cz"
     }
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/shubhadip/react-vite-component-library#readme",
+  "_id": "react-vite-component-library@1.0.26"
 }
