@@ -36,6 +36,8 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           folder: storybook-static
+          target-folder: storybook-static
+          branch: main
 
       - name: Publish
         env:
