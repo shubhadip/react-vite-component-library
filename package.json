@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/shubhadip/react-vite-component-library/issues"
   },
-  "version": "1.0.27",
+  "version": "1.0.28",
   "type": "module",
   "files": [
     "dist/*",
