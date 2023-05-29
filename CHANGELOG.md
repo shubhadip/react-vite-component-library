@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.22...v1.0.23) (2023-05-29)
+
+
+### Bug Fixes
+
+* storybook build handlings ([937f4e7](https://github.com/shubhadip/react-vite-component-library/commit/937f4e7a700db3f9f540e2488686ebe1412de63d))
+
 ## [1.0.22](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.21...v1.0.22) (2023-05-29)
 
 
