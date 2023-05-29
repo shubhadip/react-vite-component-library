@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/shubhadip/react-vite-component-library/issues"
   },
-  "version": "1.0.26",
+  "version": "1.0.27",
   "type": "module",
   "files": [
     "dist/*",
@@ -137,6 +137,5 @@
     }
   },
   "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/shubhadip/react-vite-component-library#readme",
-  "_id": "react-vite-component-library@1.0.26"
+  "homepage": "https://github.com/shubhadip/react-vite-component-library#readme"
 }
