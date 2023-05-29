@@ -33,6 +33,9 @@ jobs:
         name: build-storybook
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          folder: storybook-static
 
       - name: Publish
         env:
