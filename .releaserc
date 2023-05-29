@@ -21,6 +21,16 @@
       }
     ],
     [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist"
+          }
+        ]
+      }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": [
