@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.21...v1.0.22) (2023-05-29)
+
+
+### Bug Fixes
+
+* semantic-github adde ([690f02a](https://github.com/shubhadip/react-vite-component-library/commit/690f02a91a3604b4ff069ffd7a5a702d8af897bc))
+
 ## [1.0.21](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.20...v1.0.21) (2023-05-28)
 
 
