@@ -57,6 +57,14 @@ Link.args = {
 	...defaultProps,
 };
 
+export const LinkWithBorder: any = Template.bind({});
+LinkWithBorder.args = {
+	theme: 'link',
+	title: 'Link Button',
+	customTitleClass: 'border rounded-lg',
+	...defaultProps,
+};
+
 export const WithIcon: any = Template.bind({});
 WithIcon.args = {
 	theme: ButtonThemes.primary,

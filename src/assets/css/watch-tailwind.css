@@ -538,12 +538,20 @@ video {
   right: 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-full {
   width: 100%;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-sky-400 {
