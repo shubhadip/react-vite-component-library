@@ -18,8 +18,8 @@ module.exports = {
     './src/vite-env.d.ts',
     '*.config.cjs',
     '*.cjs',
-    'vite-mods.config.ts',
     'vite.config.ts',
+    'playwright.config.ts',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

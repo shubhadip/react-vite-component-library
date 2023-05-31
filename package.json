@@ -38,7 +38,8 @@
     "storybook:css": "tailwindcss -w -i ./src/assets/css/tailwind-entry.css -o ./src/assets/css/watch-tailwind.css",
     "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/assets/css/tailwind-entry.css -o ./src/index.css",
-    "build:css": "tailwindcss -m -i ./src/assets/css/tailwind-entry.css -o ./dist/styles.css"
+    "build:css": "tailwindcss -m -i ./src/assets/css/tailwind-entry.css -o ./dist/styles.css",
+    "test": "npx playwright test"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -54,6 +55,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
+    "@playwright/test": "^1.34.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
@@ -91,6 +93,7 @@
     "chromatic": "^6.17.4",
     "concurrently": "^8.0.1",
     "cz-conventional-changelog": "^3.3.0",
+    "dotenv": "^16.0.3",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -136,6 +139,5 @@
       "path": "./node_modules/git-cz"
     }
   },
-  "readme": "ERROR: No README data found!",
   "homepage": "https://github.com/shubhadip/react-vite-component-library#readme"
 }
