@@ -15,6 +15,7 @@ export default defineConfig({
 	],
 	build: {
 		minify: true,
+		cssCodeSplit: true,
 		lib: {
 			entry: path.resolve(__dirname, 'src/lib/index.ts'),
 			name: 'react-component-library',
