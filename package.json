@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp -r ./src/lib ./dist",
+    "build": "tsc && vite build && cp -r ./src/lib ./dist && cp tailwind.config.cjs ./dist/tailwind-base.config.js",
     "lint": "npm run check-types && eslint --fix",
     "preview": "vite preview",
     "runlint": "npm run check-types && npm run lint",

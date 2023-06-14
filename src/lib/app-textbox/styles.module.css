@@ -1,0 +1,35 @@
+.containerClass {
+  .labelClass {
+    @apply text-base mb-1 font-medium text-neutral-90 inline-block;
+  }
+  .inputClass {
+    @apply p-4 bg-neutral-5 border outline-none border-neutral-5 rounded-lg h-16 w-full text-primary-90 text-base transition;
+    &:hover {
+      @apply border border-neutral-30;
+    }
+    &:focus,
+    &:focus:hover {
+      @apply border border-primary-30 shadow-none;
+    }
+  }
+  .helpTextClass,
+  .errorTextClass {
+    @apply text-sm mt-1 capitalize;
+  }
+  .helpTextClass {
+    @apply text-neutral-90 text-opacity-50;
+  }
+  .errorTextClass {
+    @apply text-critical-50;
+  }
+  &.critical {
+    .inputClass {
+      @apply border-critical-50;
+    }
+  }
+  &.success {
+    .inputClass {
+      @apply border-success-60;
+    }
+  }
+}
