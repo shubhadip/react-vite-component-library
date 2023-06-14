@@ -17,10 +17,11 @@ export default defineConfig({
 		minify: true,
 		cssCodeSplit: true,
 		lib: {
-			entry: path.resolve(__dirname, 'src/lib/index.ts'),
-			name: 'react-component-library',
-			formats: ['es'],
-			fileName: (format) => `index.${format}.js`,
+			entry: {
+				appbutton: path.resolve(__dirname, 'src/lib/app-button/index.tsx'),
+				apptextbox: path.resolve(__dirname, 'src/lib/app-textbox/index.tsx')
+			},
+			formats: ['es', 'cjs'],
 		},
 		rollupOptions: {
 			external: ['react', 'react-dom'],
