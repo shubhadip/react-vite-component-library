@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.28...v1.0.29) (2023-06-10)
+
+
+### Bug Fixes
+
+* css split added ([f9cfdbc](https://github.com/shubhadip/react-vite-component-library/commit/f9cfdbc8ac4e08ca91d78f7f4ca28cef31540af2))
+
 ## [1.0.28](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.27...v1.0.28) (2023-05-29)
 
 
