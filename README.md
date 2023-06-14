@@ -42,12 +42,24 @@ yarn build
 npm run test
 ```
 
-## Usage Of Components Built
+## Import css
 
 ```
-  import { Component } from 'react-vite-component-library';
-  ...
+@import "node_modules/react-vite-component-library/dist/index.css";
+
+```
+
+## Usage Of Components
+
+import { Component } from 'react-vite-component-library';
+...
 
     <Component />
+
+```
+
+```
+
+```
 
 ```
