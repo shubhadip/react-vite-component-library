@@ -46,9 +46,9 @@ export const AppButton = (props: IButtonProps): JSX.Element => {
 			) : null}
 			{props.isLoading ? (
 				<span className="text-base w-full text-center text-white">{`Loading ...`}</span>
-			) : props.title ? (
+			) : (
 				<RenderTitle title={props.title} customTitleClass={props.customTitleClass} />
-			) : null}
+			)}
 			{props.showRightIcon ? (
 				<span className={[styles.righticonClass, props.customRightIconClass].join(' ')}>
 					{props.rightIcon}
