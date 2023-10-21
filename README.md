@@ -53,9 +53,9 @@ npm run test
 
 import { Component } from 'react-vite-component-library';
 ...
+<Component />
+...
 
-    <Component />
+## Usage Of Exported tailwind-base.config.js
 
-```
-
-```
+exported tailwind config can be used via tailwind [preset](https://tailwindcss.com/docs/presets)
