@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -530,14 +542,6 @@ video {
   position: relative;
 }
 
-.left-4 {
-  left: 1rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
 .right-6 {
   right: 1.5rem;
 }
@@ -574,11 +578,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-sky-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
-}
-
 .text-center {
   text-align: center;
 }
@@ -595,6 +594,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-primary-5 {
+  --tw-text-opacity: 1;
+  color: rgb(247 249 255 / var(--tw-text-opacity));
 }
 
 .text-white {

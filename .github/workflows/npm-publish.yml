@@ -29,7 +29,15 @@ jobs:
           CI: true
 
       - name: Publish
+        uses: codfish/semantic-release-action@v2
+        with:
+          additional_packages: |
+            [
+              'conventional-changelog-conventionalcommits',
+              '@semantic-release/changelog',
+              '@google/semantic-release-replace-plugin',
+              '@semantic-release/git',
+            ]
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release --debug

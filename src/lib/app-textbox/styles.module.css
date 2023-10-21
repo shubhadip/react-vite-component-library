@@ -20,7 +20,7 @@
     @apply text-neutral-90 text-opacity-50;
   }
   .errorTextClass {
-    @apply text-critical-50;
+    @apply text-critical-60;
   }
   &.critical {
     .inputClass {

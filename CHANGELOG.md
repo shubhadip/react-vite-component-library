@@ -1,3 +1,26 @@
+# [1.1.0](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.32...v1.1.0) (2023-10-21)
+
+
+### Features
+
+* coverage added ([bd4d587](https://github.com/shubhadip/react-vite-component-library/commit/bd4d587530b5ad88647f4d320eeb69c3ab1eeb3e))
+* new stories added ([60d6d11](https://github.com/shubhadip/react-vite-component-library/commit/60d6d118676b7b4fc41ab33e242cdda8e582d5e6))
+
+## [1.0.32](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.31...v1.0.32) (2023-09-08)
+
+
+### Bug Fixes
+
+* checking semantic github action ([01fe097](https://github.com/shubhadip/react-vite-component-library/commit/01fe097c4a4c1911a482dc95b54f4e42ca7baa44))
+* testing ([2859e48](https://github.com/shubhadip/react-vite-component-library/commit/2859e48158c3a9f9f298b7321096153a4be05949))
+
+## [1.0.31](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.30...v1.0.31) (2023-06-14)
+
+
+### Bug Fixes
+
+* correct types ([2dd2475](https://github.com/shubhadip/react-vite-component-library/commit/2dd24755b93342b3f682ca3caeb1a506653c63b2))
+
 ## [1.0.30](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.29...v1.0.30) (2023-06-14)
 
 
