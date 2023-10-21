@@ -1,22 +1,22 @@
-import { AppTextBox } from '../lib';
+import { expect } from '@storybook/jest';
+import { AppTextBox } from '../lib/index.ts';
+import type { Meta, StoryObj } from '@storybook/react';
+import { within, userEvent, waitFor } from '@storybook/testing-library';
+
+const meta: Meta<typeof AppTextBox> = {
+	component: AppTextBox,
+};
+
+export default meta;
+type Story = StoryObj<typeof AppTextBox>;
 
 const defaultProps = {
 	inputType: 'text',
 };
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-export default {
-	title: 'AppTextBox',
-	component: AppTextBox,
-	argTypes: {
-		...defaultProps,
-	},
-};
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args: any): JSX.Element => <AppTextBox {...args} />;
 
 export const Plain: any = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Plain.args = {
 	placeholder: 'enter your name',
 	value: 'Default',
@@ -25,37 +25,52 @@ Plain.args = {
 	...defaultProps,
 };
 
-export const WithValidations: any = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-WithValidations.args = {
-	placeholder: 'blur to validate',
-	value: '',
-	id: 'withvalidations',
-	validations: [
-		{
-			name: 'required',
-			message: 'name is required',
-		},
-	],
-	validateOnBlur: true,
-	...defaultProps,
-	label: 'With Validations',
+export const OnInput: Story = {
+	args: {
+		value: '',
+		label: 'text-box',
+		id: 'text-box',
+	},
+	play: async ({ args, canvasElement }): Promise<void> => {
+		const canvas = within(canvasElement);
+
+		const TextInput = canvas.getByLabelText('text-box', {
+			selector: 'input',
+		});
+
+		await userEvent.type(TextInput, 'i am text element', {
+			delay: 100,
+		});
+		await waitFor(() => expect(args.onChange).toHaveBeenCalled());
+	},
 };
 
-export const PasswordField: any = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-PasswordField.args = {
-	placeholder: 'password type textbox',
-	value: '',
-	id: 'password',
-	validations: [
-		{
-			name: 'required',
-			message: 'password is required',
-		},
-	],
-	validateOnBlur: true,
-	inputType: 'password',
-	label: 'password',
-	showPasswordToggleIcon: true,
+export const OnBlurError: Story = {
+	args: {
+		value: '',
+		label: 'blur-box',
+		id: 'blur-box',
+		autoFocus: true,
+		validateOnBlur: true,
+		validations: [
+			{
+				name: 'required',
+				message: 'value is required',
+			},
+		],
+	},
+	play: async ({ args, canvasElement }): Promise<void> => {
+		const canvas = within(canvasElement);
+
+		const Input = canvas.getByLabelText('blur-box', {
+			selector: 'input',
+		});
+
+		await waitFor(() => Input.blur());
+		await waitFor(() => expect(args.onFocus).toHaveBeenCalled());
+		await waitFor(() => expect(args.onBlur).toHaveBeenCalled());
+		await waitFor(() => expect(canvas.getByText('value is required')).toBeTruthy(), {
+			timeout: 300,
+		});
+	},
 };

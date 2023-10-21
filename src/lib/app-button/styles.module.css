@@ -4,7 +4,6 @@
     @apply absolute;
   }
   .title {
-    @apply w-full text-center leading-6;
   }
   .righticonClass {
     @apply absolute;

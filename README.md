@@ -59,7 +59,3 @@ import { Component } from 'react-vite-component-library';
 ```
 
 ```
-
-```
-
-```

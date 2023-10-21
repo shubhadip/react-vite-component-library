@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas } from '@storybook/blocks';
+import * as AppAppTextBoxStories from './app-textbox.stories';
+
+<Meta title="MDX/AppTextbox" of={AppAppTextBoxStories} />
+
+# AppAppTextBox
+
+With `MDX` we can include a story for `AppAppTextBox` right in the middle of our
+markdown documentation.
+
+<Canvas>
+  <Story of={AppAppTextBoxStories.Plain} />
+</Canvas>
+
+<Canvas>
+  <Story of={AppAppTextBoxStories.OnInput} />
+</Canvas>
+
+<Canvas>
+  <Story of={AppAppTextBoxStories.OnBlurError} />
+</Canvas>
