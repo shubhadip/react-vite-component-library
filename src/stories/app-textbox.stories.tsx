@@ -1,5 +1,5 @@
 import { expect } from '@storybook/jest';
-import { AppTextBox } from '../lib/index.ts';
+import { AppTextBox } from '../lib/app-textbox';
 import type { Meta, StoryObj } from '@storybook/react';
 import { within, userEvent, waitFor } from '@storybook/testing-library';
 

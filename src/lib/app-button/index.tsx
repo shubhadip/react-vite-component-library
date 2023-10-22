@@ -25,7 +25,7 @@ export const AppButton = (props: IButtonProps): JSX.Element => {
 		customTitleClass?: string;
 	}): JSX.Element | null => {
 		return props.title ? (
-			<p className={[styles.title, customTitleClass].join(' ')}>{title}</p>
+			<div className={[styles.title, customTitleClass].join(' ')}>{title}</div>
 		) : null;
 	};
 

@@ -28,6 +28,14 @@
     "./appbutton": {
       "import": "./dist/appbutton.js",
       "require": "./dist/appbutton.cjs"
+    },
+    "./svgicons": {
+      "import": "./dist/svgicons.js",
+      "require": "./dist/svgicons.cjs"
+    },
+    "./index": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
@@ -53,7 +61,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-css-injected-by-js": "^3.3.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -132,6 +141,7 @@
     "vite": "^4.3.2",
     "vite-plugin-dts": "^2.3.0",
     "vite-plugin-istanbul": "^4.0.1",
+    "vite-plugin-lib-inject-css": "^1.3.0",
     "vite-tsconfig-paths": "^4.2.0"
   },
   "lint-staged": {

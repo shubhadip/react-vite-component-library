@@ -1,5 +1,6 @@
 import { expect } from '@storybook/jest';
-import { AppButton, ButtonThemes } from '../lib';
+import { ButtonThemes } from '../lib';
+import { AppButton } from '../lib/app-button';
 import type { Meta, StoryObj } from '@storybook/react';
 import { waitFor, within, userEvent } from '@storybook/testing-library';
 
