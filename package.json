@@ -33,7 +33,7 @@
       "import": "./dist/svgicons.js",
       "require": "./dist/svgicons.cjs"
     },
-    "./index": {
+    ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
