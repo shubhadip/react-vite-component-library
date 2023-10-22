@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/shubhadip/react-vite-component-library/compare/v1.1.1...v1.1.2) (2023-10-22)
+
+
+### Bug Fixes
+
+* types issues ([7d6d1f4](https://github.com/shubhadip/react-vite-component-library/commit/7d6d1f415a4de0f750156f45c1fe13002611b518))
+
 ## [1.1.1](https://github.com/shubhadip/react-vite-component-library/compare/v1.1.0...v1.1.1) (2023-10-22)
 
 
