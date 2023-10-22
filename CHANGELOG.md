@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/shubhadip/react-vite-component-library/compare/v1.1.0...v1.1.1) (2023-10-22)
+
+
+### Bug Fixes
+
+* modular css' ([96fcc8e](https://github.com/shubhadip/react-vite-component-library/commit/96fcc8e82c583930f809e7e5ced735f6d7dce53b))
+* types ([d61263e](https://github.com/shubhadip/react-vite-component-library/commit/d61263e13f52183b46b3979e5c0374f1926d9ee2))
+
 # [1.1.0](https://github.com/shubhadip/react-vite-component-library/compare/v1.0.32...v1.1.0) (2023-10-21)
 
 
