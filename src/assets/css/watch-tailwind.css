@@ -554,6 +554,14 @@ video {
   top: 2.5rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -576,6 +584,11 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
 .text-center {

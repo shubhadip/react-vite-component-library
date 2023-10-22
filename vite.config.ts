@@ -2,10 +2,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path';
 import IstanbulPlugin from 'vite-plugin-istanbul';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 export default defineConfig({
 	plugins: [
 		react(),
+		libInjectCss(),
 		IstanbulPlugin({
 			include: 'src/*',
 			exclude: ['node_modules', 'test/'],
@@ -17,14 +19,20 @@ export default defineConfig({
 		minify: true,
 		cssCodeSplit: true,
 		lib: {
-			entry: path.resolve(__dirname, 'src/lib/index.ts'),
-			name: 'react-component-library',
-			formats: ['es'],
-			fileName: (format) => `index.${format}.js`,
+			entry: {
+				appbutton: path.resolve(__dirname, 'src/lib/app-button/index.tsx'),
+				apptextbox: path.resolve(__dirname, 'src/lib/app-textbox/index.tsx'),
+				svgicons: path.resolve(__dirname, 'src/lib/svgicons/index.tsx'),
+				index: path.resolve(__dirname, 'src/lib/index.ts')
+			},
+			formats: ['es', 'cjs'],
 		},
 		rollupOptions: {
 			external: ['react', 'react-dom'],
 			output: {
+				preserveModules: false,
+				manualChunks: undefined,
+				inlineDynamicImports: false,
 				globals: {
 					react: 'React',
 					'react-dom': 'ReactDOM',
