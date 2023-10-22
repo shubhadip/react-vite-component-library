@@ -33,7 +33,7 @@ npm run storybook
 ### Build Library
 
 ```
-yarn build
+npm run build
 ```
 
 ### Run Playwright Tests
@@ -42,18 +42,18 @@ yarn build
 npm run test
 ```
 
-## Import css
-
-```
-@import "node_modules/react-vite-component-library/dist/index.css";
-
-```
-
 ## Usage Of Components
 
-import { Component } from 'react-vite-component-library';
+import { AppButton } from 'react-vite-component-library/appbutton'
+
 ...
 <Component />
+...
+
+## Usage Of Utilities & Types
+
+...
+import { ButtonThemes } from 'react-vite-component-library'
 ...
 
 ## Usage Of Exported tailwind-base.config.js
